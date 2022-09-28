@@ -1,9 +1,11 @@
 import csv from 'csvtojson';
 
+const BANNED_MATCHINGS_FILE = 'bannedMatchings.csv'
+
 export const getBannedAssignmentsAndPeople = async (): Promise<{ bannedAssignments: boolean[][], people: string[] }> => {
     const bannedAssignments: boolean[][] = [];
     let people: string[] = [];
-    (await csv().fromFile('2022bannedMatchings.csv')).map(
+    (await csv().fromFile(BANNED_MATCHINGS_FILE)).map(
         (item) => {
             people = Object.keys(item);
             bannedAssignments.push(Object.values(item).map(
