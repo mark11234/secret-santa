@@ -1,5 +1,5 @@
  # Secret Santa
-Finds a valid permutation, given a csv file containing disallowed matchings in order to run a secret santa without repetitions.
+Finds a valid permutation, given a csv file containing disallowed matchings in order to run a secret santa without repetitions from previous years.
 
 ## Banned matchings file
 
