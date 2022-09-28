@@ -1,4 +1,12 @@
-bannedMatchings.csv
-.DS_Store
+# Build output
+dist
+
+# Dependency directories
 node_modules
+
+# 'environment' variables?
+bannedMatchings.csv
 previousBannedMatchings
+
+# macOS
+.DS_Store
