@@ -4,7 +4,8 @@
   "description": "Finds a valid secret Santa matching, given a csv file of disallowed matchings",
   "main": "dist/app.js",
   "scripts": {
-    "start": "cd src && ts-node app && cd ../",
+    "start":"tsc && cd dist && node app && cd ../",
+    "dev": "cd src && ts-node app && cd ../",
     "lint": "npx eslint . --ext .ts"
   },
   "dependencies": {

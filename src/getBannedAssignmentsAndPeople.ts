@@ -1,6 +1,6 @@
 import csv from 'csvtojson';
 
-const BANNED_MATCHINGS_FILE = 'bannedMatchings.csv';
+const BANNED_MATCHINGS_FILE = '../bannedMatchings.csv';
 
 export const getBannedAssignmentsAndPeople = async (): Promise<{
     bannedAssignments: boolean[][];
