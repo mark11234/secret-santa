@@ -4,9 +4,10 @@ dist
 # Dependency directories
 node_modules
 
-# 'environment' variables?
+# Environment variables
 bannedMatchings.csv
 previousBannedMatchings
+matching.csv
 
 # macOS
 .DS_Store

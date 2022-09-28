@@ -1,7 +1,10 @@
 import { getBannedAssignmentsAndPeople } from './getBannedAssignmentsAndPeople';
 import { randomPermutation } from './randomPermutation';
 
-export const getValidPermutation = async () => {
+export const getValidPermutation = async (): Promise<{
+    permutation: number[];
+    people: string[];
+}> => {
     const { bannedAssignments, people } = await getBannedAssignmentsAndPeople();
     let permutation: number[];
     // eslint-disable-next-line no-constant-condition
@@ -14,9 +17,5 @@ export const getValidPermutation = async () => {
         });
         if (!bannedMatching) break;
     }
-
-    return permutation.map((toIndex: number, fromIndex: number) => ({
-        from: people[fromIndex],
-        to: people[toIndex],
-    }));
+    return { permutation: permutation, people: people };
 };

@@ -17,7 +17,7 @@ export const getBannedAssignmentsAndPeople = async (): Promise<{
         );
     });
     return { bannedAssignments: bannedAssignments, people: people };
-    // i.e. bannedAssignments[i][j] === true // means people[i] cannot give a gift to people[j]
+    //   bannedAssignments[i][j] === true // means people[i] cannot give a gift to people[j]
     //   bannedAssignments[0][8];  // true
     //   bannedAssignments[8][0];  // false
     //   people[0];                // Mike
