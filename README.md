@@ -3,7 +3,7 @@ Finds a valid permutation, given a csv file containing disallowed matchings in o
 
 ## Banned matchings file
 
-The banned matchings file should be formatted in the same way as the .example file.
+The banned matchings file should be formatted in the same way as the `bannedMatchings.csv.example` file and saved as `bannedMatchings.csv`.
 |Alice| Bob| Claire| David|
 |---|---|---|---|
 |1|1|0|0|
