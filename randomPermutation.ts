@@ -1,4 +1,4 @@
-export const randomPermutation = <T,>(items: Array<T>): T[] => { 
+export const randomPermutation = <T>(items: Array<T>): T[] => {
     const permutedItems: T[] = [];
     const unusedItems = items.slice(0);
 
