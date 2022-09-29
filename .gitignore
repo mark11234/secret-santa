@@ -8,6 +8,8 @@ node_modules
 bannedMatchings.csv
 previousBannedMatchings
 matching.csv
+.env
+emailAddresses.csv
 
 # macOS
 .DS_Store

@@ -11,7 +11,5 @@ export const saveValidPermutation = (permutation: number[]): void => {
             .concat('\n');
     });
 
-    fs.writeFile('../matching.csv', matchingDataToWrite, (): void =>
-        console.log('done'),
-    );
+    fs.writeFile('../matching.csv', matchingDataToWrite, void 0);
 };
