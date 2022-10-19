@@ -11,5 +11,6 @@ export const saveValidPermutation = (permutation: number[]): void => {
             .concat('\n');
     });
 
-    fs.writeFile('../matching.csv', matchingDataToWrite, void 0);
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
+    fs.writeFile('../matching.csv', matchingDataToWrite, () => {});
 };
